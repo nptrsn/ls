@@ -10,6 +10,12 @@
 		<?php while (have_posts()) : the_post(); ?>
         
 			<?php if (is_page()) : /* show page contents */ ?>
+
+          <div class="main">
+            <video autoplay loop muted poster="vid-first-frame.jpg" class="home-bg">
+              <source src="media/ls.mov" type="video/mov">
+            </video>
+          </div>
        
             <?php endif; /* end if page or post */ ?>
         

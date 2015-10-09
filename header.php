@@ -12,7 +12,7 @@
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> class="home-body">
 <div id="wrapper">
 <div id="wrapper2">
 <div id="header">
@@ -23,3 +23,4 @@
     </span></a></h1>
   <div class="clearboth"></div>
 </div>
+
