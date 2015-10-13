@@ -6,9 +6,12 @@ Theme URI: http://lucidsolutions.io
 /* basic reset */
 	* { margin: 0; padding: 0; }
 	h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, cite, table { margin-bottom: 0.8em; }
-	ul, ol, li { margin-left: 0.5em; }
+	ul, ol, li { margin-left: 0.0em; }
 
 /* page wrappers */
+	html {
+		background: black;
+	}
 	body {
 		text-align: center;
 		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -16,12 +19,52 @@ Theme URI: http://lucidsolutions.io
 	}
 	#wrapper {
 		display: block;  	
-		width:980px;
+		width:1080px;
 		margin:0px auto;
 	}
 	#wrapper2 {
 		text-align: left; 
 	}
+
+/* fonts */
+@font-face {
+    font-family: 'open_regular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_bold';
+    src: url('fonts/opensans-bold-webfont.eot');
+    src: url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/opensans-bold-webfont.woff') format('woff'),
+         url('fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_semi';
+    src: url('fonts/opensans-semibold-webfont.eot');
+    src: url('fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* common tags */
 
@@ -60,11 +103,24 @@ Theme URI: http://lucidsolutions.io
     z-index: -100;
 	}
 	.home-bg {
-		position: absolute;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+/*		position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%;*/
 	}
 	@media (min-aspect-ratio: 16/9) {
 	  .home-bg {
@@ -77,6 +133,7 @@ Theme URI: http://lucidsolutions.io
 	  .home-bg {
 	    width: auto;
 	    height: 100%;
+	    max-width: 100%;
 	  }
 	}
 	@media (max-width: 767px) {
@@ -90,11 +147,21 @@ Theme URI: http://lucidsolutions.io
 }
 /* header */
 	#header {
-		margin: 30px 0 20px 0;
+		margin: 30px 0;
 		border-bottom: 1px solid #eee;
 		display: none;
 	}
-	
+	.main-menu {
+		list-style: none;
+		display: table;
+		color: white;
+		font-family: "open_regular";
+	}
+	.main-menu li {
+		display: table-cell;
+		vertical-align: bottom;
+		padding-right: 15px;
+	}
 
 
 /* footer */
@@ -145,5 +212,17 @@ Theme URI: http://lucidsolutions.io
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	.clearfix:after {
+	     visibility: hidden;
+	     display: block;
+	     font-size: 0;
+	     content: " ";
+	     clear: both;
+	     height: 0;
+	     }
+	.clearfix { display: inline-block; }
+	/* start commented backslash hack \*/
+	* html .clearfix { height: 1%; }
+	.clearfix { display: block; }
+	/* close commented backslash hack */
 

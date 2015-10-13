@@ -1,8 +1,15 @@
 <?php get_header(); ?>
-
-  <div class="main-wrap">
     <div class="content">
-        <video autoplay loop muted poster="media/ls.png" class="home-bg" src="http://lucidsolutions.io/wp-content/themes/ls/media/ls.mov" type="video/mov">
+      <nav class="main-nav clearfix">
+        <ul class="main-menu">  
+          <li class="nav-logo">
+            <img src="http://lucidsolutions.io/wp-content/themes/ls/media/lucid-solutions.png" onclick="location.href='http://lucidsolutions.io'"/>
+          </li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+        <video autoplay loop muted poster="media/ls.png" class="home-bg" src="http://lucidsolutions.io/wp-content/themes/ls/media/ls2.mov" type="video/mov">
         </video>
       </div>
     </div><!-- / end content -->
@@ -15,6 +22,5 @@
         <h3>Online Marketing</h3>
       </div>
     </div>
-  </div><!-- / end main wrap-->
 
 <?php /* footer */ get_footer(); ?>
