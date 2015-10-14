@@ -7,14 +7,17 @@
 </title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<!--Uncomment this to use a favicon.ico in the theme directory: -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <!--<link rel="SHORTCUT ICON" href="<?php bloginfo('template_directory'); ?>/favicon.ico"/>-->
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> class="home-body">
-<div id="wrapper">
-<div id="wrapper2">
 <div id="header">
   <h1 id="logotop"><a href="<?php bloginfo('url'); ?>"><span>
     <?php bloginfo('name'); ?>
