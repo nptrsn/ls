@@ -89,15 +89,7 @@ Theme URI: http://lucidsolutions.io
 	    max-width: 100%;
 	  }
 	}
-	@media (max-width: 767px) {
-  #content {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
-  }
 
-  .home-bg {
-    display: none;
-  }
-}
 /* header */
 	#header {
 		margin: 30px 0;
@@ -240,4 +232,46 @@ Theme URI: http://lucidsolutions.io
 	* html .clearfix { height: 1%; }
 	.clearfix { display: block; }
 	/* close commented backslash hack */
+
+  /* Responsive */
+@media (max-width: 650px) {
+  html {
+    margin-top: 0;
+    background: url('media/ls-mobile.png') center center / cover no-repeat;
+    background-position-y: -100px;
+  }
+  body {
+    padding: 20px;
+    height: 105vh;
+    overflow: hidden;
+  }
+  .main-menu {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+  .main-menu li {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .main-menu li.nav-logo {
+    width: 100%;
+    display: block;
+    padding-right: 0;
+    padding-left: 5px;
+  }
+  .bodyCopy {
+    max-width: 300px;
+    font-size: .9em;
+  }
+  .home-bg {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .bodyCopy {
+    font-size: .75em;
+  }
+  .main-menu li.nav-logo {
+}
 
