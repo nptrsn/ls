@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
       $('.contactWrap').animate({top: "-160px"}, 750);
     }
     else if ( screenSize < mobile) {
-      $('.contactWrap').animate({top: "-260px"}, 750);
+      $('.contactWrap').animate({top: "-300px"}, 750);
     }
   });
 
@@ -50,7 +50,7 @@ jQuery(document).ready(function($){
         $('.contactWrap').animate({top: "-160px"}, 750);
       }
       else if ( screenSize < mobile) {
-        $('.contactWrap').animate({top: "-260px"}, 750);
+        $('.contactWrap').animate({top: "-300px"}, 750);
       }
     }
     $('.contactWrap').addClass('active');
@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
       $('.contactWrap').animate({top: "-160px"}, 750);
       }
       else if ( screenSize < mobile) {
-        $('.contactWrap').animate({top: "-260px"}, 750);
+        $('.contactWrap').animate({top: "-300px"}, 750);
       }
   });
 });

@@ -16,12 +16,12 @@
 <!--<link rel="SHORTCUT ICON" href="<?php bloginfo('template_directory'); ?>/favicon.ico"/>-->
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
-<body <?php body_class(); ?> class="home-body">
+<body <?php body_class(); ?> >
 <div id="header">
   <h1 id="logotop"><a href="<?php bloginfo('url'); ?>"><span>
     <?php bloginfo('name'); ?>
-    :
     <?php bloginfo('description'); ?>
     </span></a></h1>
   <div class="clearboth"></div>

@@ -234,15 +234,14 @@ Theme URI: http://lucidsolutions.io
 	/* close commented backslash hack */
 
   /* Responsive */
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   html {
-    margin-top: 0;
+    margin-top: 0 !important;
     background: url('media/ls-mobile.png') center center / cover no-repeat;
     background-position-y: -100px;
   }
   body {
     padding: 20px;
-    height: 105vh;
     overflow: hidden;
   }
   .main-menu {
@@ -261,17 +260,16 @@ Theme URI: http://lucidsolutions.io
     padding-left: 5px;
   }
   .bodyCopy {
-    max-width: 300px;
+    max-width: 200px;
     font-size: .9em;
   }
   .home-bg {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .bodyCopy {
     font-size: .75em;
   }
-  .main-menu li.nav-logo {
 }
 
